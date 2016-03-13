@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+        link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/grayscale.css')
+    body
+        block content
+
+        // Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/
+        script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false')
+
+        script(type='text/javascript', src='/javascripts/jquery.js')
+        script(type='text/javascript', src='/javascripts/bootstrap.min.js')
+        script(type='text/javascript', src='/javascripts/jquery.easing.min.js')
+        script(type='text/javascript', src='/javascripts/grayscale.js')
