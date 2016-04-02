@@ -1,0 +1,41 @@
+extends layout
+
+block content
+    body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
+        // Navigation
+        nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+            .container
+                .navbar-header
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+                        i.fa.fa-bars
+                    a.navbar-brand.page-scroll(href='/')
+                        i.fa.fa-play-circle
+                        span.light Le-Marie
+                // /.navbar-collapse
+        section#download.container.content-section.text-center
+            .row
+                .col-lg-8.col-lg-offset-2
+                    h2 We're service will coming up soon!
+                    p
+                        | Le-Marie is startup for everyone that feel busy for create your brand mercendise or your own style
+                    p
+                        | Le-Marie is near you and make your bussiness easier.
+                    p
+                        | Subscribe for more detail about our service.
+                    form
+                        .form-group
+                            label(for='emailsubscribe') Email address
+                            input#emailsubscribe.form-control(type='email', placeholder='Email')
+                        .form-group
+                            label(for='nicknamesubscribe') Username
+                            input#nicknamesubscribe.form-control(type='username', placeholder='Username')
+                        button.btn.btn-default(
+                        type='submit'
+                        onclick='something()'
+                        ) Submit
+
+
+        // Footer
+        footer
+            .container.text-center
+                p Copyright © Le-Marie 2016

@@ -2,6 +2,7 @@ doctype html
 html
     head
         title= title
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
         link(rel='stylesheet', href='/stylesheets/bootstrap.css')
         link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
         link(rel='stylesheet', href='/stylesheets/grayscale.css')
@@ -15,3 +16,7 @@ html
         script(type='text/javascript', src='/javascripts/bootstrap.min.js')
         script(type='text/javascript', src='/javascripts/jquery.easing.min.js')
         script(type='text/javascript', src='/javascripts/grayscale.js')
+        script.
+            function move() {
+                window.location.href = '/newpage'
+            }
